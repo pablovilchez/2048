@@ -2,8 +2,7 @@
   --color-bg: #faf8ef;
   --color-container: #bbada0;
   --color-empty: #cdc1b4;
-  --color-text-dark: #776e65;
-  --color-text-light: #f9f6f2;
+
 
   --tile-2: #eee4da;
   --tile-4: #ede0c8;
@@ -20,11 +19,9 @@
 
 .tile-2 {
   background-color: var(--tile-2);
-  color: var(--color-text-dark);
 }
 .tile-4 {
   background-color: var(--tile-4);
-  color: var(--color-text-dark);
 }
 .tile-8 {
   background-color: var(--tile-8);
