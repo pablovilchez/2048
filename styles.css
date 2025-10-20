@@ -1,0 +1,107 @@
+:root {
+  --color-bg: #faf8ef;
+  --color-container: #bbada0;
+  --color-empty: #cdc1b4;
+  --color-text-dark: #776e65;
+  --color-text-light: #f9f6f2;
+
+  --tile-2: #eee4da;
+  --tile-4: #ede0c8;
+  --tile-8: #f2b179;
+  --tile-16: #f59563;
+  --tile-32: #f67c5f;
+  --tile-64: #f65e3b;
+  --tile-128: #edcf72;
+  --tile-256: #edcc61;
+  --tile-512: #edc850;
+  --tile-1024: #edc53f;
+  --tile-2048: #edc22e;
+}
+
+.tile-2 {
+  background-color: var(--tile-2);
+  color: var(--color-text-dark);
+}
+.tile-4 {
+  background-color: var(--tile-4);
+  color: var(--color-text-dark);
+}
+.tile-8 {
+  background-color: var(--tile-8);
+}
+.tile-16 {
+  background-color: var(--tile-16);
+}
+.tile-32 {
+  background-color: var(--tile-32);
+}
+.tile-64 {
+  background-color: var(--tile-64);
+}
+.tile-128 {
+  background-color: var(--tile-128);
+}
+.tile-256 {
+  background-color: var(--tile-256);
+}
+.tile-512 {
+  background-color: var(--tile-512);
+}
+.tile-1024 {
+  background-color: var(--tile-1024);
+}
+.tile-2048 {
+  background-color: var(--tile-2048);
+}
+
+.cell:empty {
+  background-color: var(--color-empty);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  background-color: var(--color-bg);
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+.game-container {
+  display: inline-block;
+  background-color: var(--color-container);
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
+}
+
+.score-container {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.grid-container {
+  padding: 10px;
+  display: grid;
+  background-color: var(--color-empty);
+  border-radius: 8px;
+  grid-template-columns: repeat(4, 80px);
+  grid-template-rows: repeat(4, 80px);
+  gap: 10px;
+}
+
+.cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: all 0.15s ease-in-out;
+  font-size: 26px;
+  font-weight: bold;
+  width: 80px;
+  height: 80px;
+}
